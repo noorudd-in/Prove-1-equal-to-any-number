@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prove 1 = Ꝏ</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p class="animation">Let's Prove 1 = <span> </span></p>
+    <form class="form" id="userForm">
+
+    <div class="question">
+
+            <input type="number" placeholder="Enter any whole number" min="0" class="input" id="userinput">
+            <button class="button-confirm" type="submit" onclick=solution(event)>Let`s go →</button>
+            <button class="button-confirm" onclick=startOver()>Start Over?</button>
+    </div>
+
+    <div id="answer" style="display: none;">
+
+        <p id="partone"></p>
+
+        <p id="parttwo">Let's take an equation
+            <br>
+            x<sup>2</sup> - y<sup>2</sup> = x<sup>2</sup> - y<sup>2</sup>
+            <br>
+            Here, L.H.S = R.H.S.
+            <br>
+            Now, let's take L.H.S. first.
+            <br>
+            L.H.S. = x<sup>2</sup> - y<sup>2</sup>
+            <br>
+            Here we can apply formula of (a<sup>2</sup> - b<sup>2</sup>) = (a + b)(a - b)
+            <br>
+            &there4; x<sup>2</sup> - y<sup>2</sup> = (x + y)(x - y)
+            <br>
+            Now let's assume x = y ...... (1)
+            <br>
+            &there4; L.H.S. = (x + x)(x - x) ...... (2)
+            <br>
+            Now let's take R.H.S.
+            <br>
+            R.H.S. = x<sup>2</sup> - y<sup>2</sup>
+            <br>
+            Since x = y (from equation 1)
+            <br>
+            &there4; R.H.S. = x<sup>2</sup> - x<sup>2</sup>
+            <br>
+            Since we can take x as common
+            <br>
+            &there4; R.H.S. = x(x -x) ...... (3)
+            <br>
+            Since, L.H.S = R.H.S.
+            <br>
+            &there4; (x + x)(x - x) = x(x -x) ...... (from equation 2 and 3)
+            <br>
+            We can cancel (x - x) from both the sides.
+            <br>
+            &there4; (x + x) = x
+            <br>
+            &there4; 2x = x
+            <br>
+            We can cancel x from both the sides so,
+            <br>
+            &there4; 2 = 1 OR 1 = 2
+            <br>
+            &there4; 1 = 2 ...... (4)
+            <br>
+        </p>
+
+        <div id="partthree"></div>
+
+    </div>
+
+    <div id="partfour"></div>
+
+</form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
